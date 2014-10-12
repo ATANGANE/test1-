@@ -1,10 +1,21 @@
-int fib(int n)
-{
-  if (n==0) return 1;
-  return (fib(n - 1) + fib(n - 2));
+String fibonacciIteration(int t) {
+  int a = 0, b = 1, f = 1, n = 1;
+  String result = '0' ' 1';
+  while (n < t) {
+    f = a + b;
+    result = '$result $f';
+    a = b;
+    b = f;
+    n = n + 1;
+  }
+  return result;
 }
 
-void main() {
-  for (int i = 0; i < 10; i++) {
-print("fib(“+i+”)=”+fib(i));
+main() {
+  int count = 9;
+  String sequence =
+      fibonacciIteration(count);
+  print('Fibonacci with iteration: '
+        '${count + 1} numbers sequence');
+  print(sequence);
 }

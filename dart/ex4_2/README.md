@@ -3,4 +3,4 @@ ATANGANE
 Ex4_2
 dr
 
-ecrit avec l'aide
+ecrit avec l'aide.
